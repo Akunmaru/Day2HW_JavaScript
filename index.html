@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>JavaScript Day2 HW</title>
+</head>
+<body>
+    <div>
+        <h1>come back for another cat meme?</h1>
+        <h3>i wont force you to see one...</h3>
+        <h2>just tap the button... you know you want to</h2>
+        <h2>just press the button again to hide the abomination</h2>
+        <!-- <img id="image" src="images/4foyc3.jpg" alt="cat is coding and feels upset no one asks how he feels"> -->
+    </div>
+    <button id="show-image-button">do it... press me...</button>
+    <img id="my-image" src="https://i.imgflip.com/4foyc3.jpg" hidden>
+    <script>
+      const showImageButton = document.getElementById("show-image-button");
+      const myImage = document.getElementById("my-image");
+      showImageButton.addEventListener("click", () => {
+         myImage.hidden = !myImage.hidden;
+      });
+    </script>    
+</body>
+</html>
